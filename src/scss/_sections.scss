@@ -11,12 +11,21 @@
 .svg-primary {
   svg {
     fill: $color-primary;
-    transition: all 0.25s ease-in-out;
   }
   &:hover {
     svg {
       fill: $color-secondary;
-      transition: all 0.25s ease-in-out;
+    }
+  }
+}
+
+.svg-white {
+  svg {
+    fill: white;
+  }
+  &:hover {
+    svg {
+      fill: $color-secondary;
     }
   }
 }
@@ -31,4 +40,11 @@
   100% {
     opacity: 1;
   }
+}
+
+#section-more {
+  height: 60vh;
+}
+#section-about {
+  height: 70vh;
 }

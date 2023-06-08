@@ -1,37 +1,31 @@
 import { NavLink } from "react-router-dom";
+import { IconDown } from "./MySvgs";
 
 const NavBar = () => {
-  const menuList = [
-    {
-      name: "Home",
-      link: "/",
-    },
-    {
-      name: "Quirúrgico",
-      link: "#",
-    },
-    {
-      name: "No quirurgico",
-      link: "#",
-    },
-    {
-      name: "Cosmética",
-      link: "#",
-    },
-    {
-      name: "Contacto",
-      link: "/contacto",
-    },
-  ];
-
   return (
     <nav>
-      <ul className="flex gap-12 font-medium">
-        {menuList.map((item, index) => (
-          <li key={index}>
-            <NavLink to={item.link}>{item.name}</NavLink>
-          </li>
-        ))}
+      <ul className="flex gap-12">
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <a href="#" className="flex gap-2 items-center">
+            Quirúrgico <IconDown />
+          </a>
+        </li>
+        <li>
+          <a href="#" className="flex gap-2 items-center">
+            No quirurgico <IconDown />
+          </a>
+        </li>
+        <li>
+          <a href="#" className="flex gap-2 items-center">
+            Cosmética <IconDown />
+          </a>
+        </li>
+        <li>
+          <NavLink to="/contacto">Contacto</NavLink>
+        </li>
       </ul>
     </nav>
   );

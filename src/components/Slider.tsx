@@ -21,7 +21,7 @@ const SliderItem = ({ src, alt }: SliderItemProps) => {
     };
   }, [src]);
 
-  return isLoading ? <Loader /> : <img src={src} alt={alt} className="fade-in h-full object-cover" />;
+  return isLoading ? <Loader /> : <img src={src} alt={alt} className="fade-in h-screen w-screen object-cover" />;
 };
 
 const Slider = () => {

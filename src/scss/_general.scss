@@ -20,18 +20,24 @@ a {
 
 //Fonts
 
-.font-thins {
-  font-weight: 200;
-}
 .font-light {
   font-weight: 300;
 }
+.font-italic {
+  font-style: italic;
+}
 
+.text-primary {
+  color: $color-primary;
+}
 .color-primary {
   color: $color-primary;
 }
 .color-secondary {
   color: $color-secondary;
+}
+.bg-primary {
+  background-color: $color-primary;
 }
 .bg-secondary {
   background-color: $color-secondary;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 html,
 body {
   accent-color: #fff;
@@ -20,12 +20,16 @@ a:hover {
   color: #b28378;
 }
 
-.font-thins {
-  font-weight: 200;
-}
-
 .font-light {
   font-weight: 300;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.text-primary {
+  color: #b28378;
 }
 
 .color-primary {
@@ -34,6 +38,10 @@ a:hover {
 
 .color-secondary {
   color: #666666;
+}
+
+.bg-primary {
+  background-color: #b28378;
 }
 
 .bg-secondary {
@@ -95,11 +103,16 @@ a:hover {
 
 .svg-primary svg {
   fill: #b28378;
-  transition: all 0.25s ease-in-out;
 }
 .svg-primary:hover svg {
   fill: #666666;
-  transition: all 0.25s ease-in-out;
+}
+
+.svg-white svg {
+  fill: white;
+}
+.svg-white:hover svg {
+  fill: #666666;
 }
 
 .fade-in {
@@ -113,4 +126,11 @@ a:hover {
   100% {
     opacity: 1;
   }
+}
+#section-more {
+  height: 60vh;
+}
+
+#section-about {
+  height: 70vh;
 }/*# sourceMappingURL=main.css.map */
