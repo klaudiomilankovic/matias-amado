@@ -1,0 +1,38 @@
+html,
+body {
+  accent-color: #fff;
+  color: $text-color-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 980px) {
+    font-size: 16px;
+  }
+}
+
+//Links
+a {
+  color: $color-secondary;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+//Fonts
+
+.font-thins {
+  font-weight: 200;
+}
+.font-light {
+  font-weight: 300;
+}
+
+.color-primary {
+  color: $color-primary;
+}
+.color-secondary {
+  color: $color-secondary;
+}
+.bg-secondary {
+  background-color: $color-secondary;
+}

@@ -1,0 +1,34 @@
+.indicators {
+  bottom: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+  li {
+    margin: 0 0.25rem !important;
+  }
+}
+
+.svg-primary {
+  svg {
+    fill: $color-primary;
+    transition: all 0.25s ease-in-out;
+  }
+  &:hover {
+    svg {
+      fill: $color-secondary;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
