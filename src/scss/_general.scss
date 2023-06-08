@@ -12,12 +12,14 @@ body {
 
 //Links
 a {
-  color: $color-secondary;
+  color: currentColor;
+}
+.link-white {
+  color: white;
   &:hover {
-    color: $color-primary;
+    color: $color-secondary;
   }
 }
-
 //Fonts
 
 .font-light {
@@ -30,10 +32,7 @@ a {
 .text-primary {
   color: $color-primary;
 }
-.color-primary {
-  color: $color-primary;
-}
-.color-secondary {
+.text-secondary {
   color: $color-secondary;
 }
 .bg-primary {

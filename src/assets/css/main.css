@@ -14,10 +14,14 @@ body {
 }
 
 a {
-  color: #666666;
+  color: currentColor;
 }
-a:hover {
-  color: #b28378;
+
+.link-white {
+  color: white;
+}
+.link-white:hover {
+  color: #666666;
 }
 
 .font-light {
@@ -32,11 +36,7 @@ a:hover {
   color: #b28378;
 }
 
-.color-primary {
-  color: #b28378;
-}
-
-.color-secondary {
+.text-secondary {
   color: #666666;
 }
 
@@ -48,14 +48,20 @@ a:hover {
   background-color: #666666;
 }
 
-.nav li a {
+.nav li a,
+.nav li button {
   height: 130px;
   overflow: hidden;
   padding: 4rem 2rem;
 }
-.nav li a:hover {
+.nav li a:hover,
+.nav li button:hover {
   background-color: #b28378;
   color: white;
+}
+
+.categories {
+  top: 130px;
 }
 
 #nav-menu {
