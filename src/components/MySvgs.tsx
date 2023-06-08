@@ -45,7 +45,7 @@ export const Whatsapp = () => {
 
 export const IconDown = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="10.2" height="6.6" viewBox="0 0 10.2 6.6" fill="#666;" className="mt-1">
+    <svg xmlns="http://www.w3.org/2000/svg" width="10.2" height="6.6" viewBox="0 0 10.2 6.6" className="mt-1">
       <polygon points="5.1 6.6 0 .7 .8 0 5.1 5.1 9.4 0 10.2 .7 5.1 6.6" />
     </svg>
   );

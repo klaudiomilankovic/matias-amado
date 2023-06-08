@@ -1,0 +1,13 @@
+.nav {
+  li {
+    a {
+      height: 130px;
+      overflow: hidden;
+      padding: 4rem 2rem;
+      &:hover {
+        background-color: $color-primary;
+        color: white;
+      }
+    }
+  }
+}

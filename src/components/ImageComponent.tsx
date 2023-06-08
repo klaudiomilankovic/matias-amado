@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import Loader from "./Loader";
 
-const ImageComponent = ({ src, alt }) => {
+type ImageComponentProps = {
+  src: string;
+  alt?: string;
+};
+
+const ImageComponent = ({ src, alt }: ImageComponentProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

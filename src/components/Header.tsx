@@ -4,7 +4,7 @@ import Social from "./Social";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center bg-white px-12 py-8">
+    <div className="flex justify-between items-center bg-white px-14">
       <div>
         <Link to="/">
           <img src="/images/logo.svg" alt="logo" />

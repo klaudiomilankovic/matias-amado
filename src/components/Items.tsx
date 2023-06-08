@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+import Image from "../components/ImageComponent";
 
 const Items = () => {
   return (
     <article className="item border border-black relative">
       <div className="item-img">
         <Link to="/detalles/2">
-          <img src="https://thk-avalos.com/backend/images/avalos_cc370695f9.jpg" alt="" className="aspect-video object-cover w-full hover:opacity-80 transition-opacity" />
+          <div className="aspect-video object-cover hover:opacity-80 transition-opacity">
+            <Image src="https://thk-avalos.com/backend/images/avalos_cc370695f9.jpg" alt="" />
+          </div>
         </Link>
       </div>
       <div className="item-txt p-4 h-44">

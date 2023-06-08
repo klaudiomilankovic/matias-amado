@@ -2,13 +2,16 @@ import Image from "../components/ImageComponent";
 
 const About = () => {
   return (
-    <section className="flex" id="section-about">
-      <div className="w-1/2">
-        <Image src="https://thk-avalos.com/backend/images/avalos_cc370695f9.jpg" alt="" />
+    <section className="md:flex relative" id="section-about">
+      <div className="absolute z-20" id="icon-ma">
+        <img src="/images/icon-ma.svg" />
       </div>
-      <div className="w-1/2 p-12 color-primary h-full flex items-center">
+      <div className="aspect-square md:aspect-auto md:w-1/2">
+        <Image src="https://thk-avalos.com/backend/images/avalos_cc370695f9.jpg" />
+      </div>
+      <div className="md:w-1/2 p-12 color-primary h-full flex items-center">
         <div>
-          <h1 className="text-6xl font-bold mb-8">MATIAS AMADO</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-8">MATIAS AMADO</h1>
           <ul className="[&>li]:mb-4 list-disc ml-3">
             <li>
               Carrera de Medicina <br />

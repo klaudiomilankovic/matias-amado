@@ -9,7 +9,7 @@ body {
 @media (max-width: 980px) {
   html,
   body {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -46,6 +46,16 @@ a:hover {
 
 .bg-secondary {
   background-color: #666666;
+}
+
+.nav li a {
+  height: 130px;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+.nav li a:hover {
+  background-color: #b28378;
+  color: white;
 }
 
 #nav-menu {
@@ -115,6 +125,13 @@ a:hover {
   fill: #666666;
 }
 
+.svg-secondary svg {
+  fill: #666666;
+}
+.svg-secondary:hover svg {
+  fill: white;
+}
+
 .fade-in {
   animation: fadeIn ease 1s;
 }
@@ -133,4 +150,26 @@ a:hover {
 
 #section-about {
   height: 70vh;
+}
+@media (max-width: 980px) {
+  #section-about {
+    height: auto;
+  }
+}
+
+#icon-ma {
+  left: 5%;
+  width: 200px;
+  margin-top: -100px;
+}
+
+@media (max-width: 980px) {
+  .px-14 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.active {
+  color: #b28378;
 }/*# sourceMappingURL=main.css.map */
