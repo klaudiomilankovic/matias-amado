@@ -18,7 +18,16 @@ const Form = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  type Data = {
+    name?: string;
+    city?: string;
+    email?: string;
+    address?: string;
+    phone?: string;
+    message?: string;
+  };
+
+  const onSubmit = (data: Data) => {
     setSending(true);
     const sender = {
       to: " ",

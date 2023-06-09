@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 const apiUrl = "https://thk-avalos.com/backend/api";
 import axios from "axios";
 
-type Data = string | null;
+type Data = string;
 
 function useFetch(url: Data) {
   const [data, setData] = useState(null);

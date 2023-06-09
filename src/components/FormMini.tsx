@@ -18,16 +18,14 @@ const FormMini = () => {
     formState: { errors },
   } = useForm();
 
-  type FormData = {
-    data: {
-      name: string;
-      email: string;
-      phone: string;
-      message: string;
-    };
+  type Data = {
+    name?: string;
+    email?: string;
+    phone?: string;
+    message?: string;
   };
 
-  const onSubmit = (data: FormData) => {
+  const onSubmit = (data: Data) => {
     setSending(true);
     const sender = {
       to: " ",

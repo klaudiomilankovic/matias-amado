@@ -23,8 +23,14 @@ const SliderItem = ({ src }: SliderItemProps) => {
   return isLoading ? <Loader /> : <img src={src} className="fade-in h-screen w-full object-cover" />;
 };
 
+type SliderProps = {
+  data: null | Array<{ id: number; image: string }>;
+  loading: boolean;
+  error: null;
+};
+
 const SliderPost = () => {
-  const { data, loading } = useFetch(`/imagenes`);
+  const { data, loading } = useFetch(`/imagenes`) as SliderProps;
 
   const properties = {
     arrows: false,
@@ -36,15 +42,7 @@ const SliderPost = () => {
 
   return (
     <section className="overflow-hidden" id="slider-post">
-      {loading ? (
-        <Loader />
-      ) : (
-        <Slide {...properties}>
-          {data.map((image) => (
-            <SliderItem key={image.id} src={image.image} />
-          ))}
-        </Slide>
-      )}
+      {loading ? <Loader /> : <Slide {...properties}>{data && data.map((image) => <SliderItem key={image.id} src={image.image} />)}</Slide>}
 
       <a href="https://wa.me/5493874685060" target="_blank" rel="noreferrer" className="fixed z-20 bottom-8 right-8 drop-shadow-hover drop-shadow svg-primary">
         <Whatsapp />
