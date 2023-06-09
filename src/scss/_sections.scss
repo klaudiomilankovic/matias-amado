@@ -77,3 +77,8 @@
 .active {
   color: $color-primary;
 }
+
+input,
+textarea {
+  border: 1px solid $color-secondary;
+}

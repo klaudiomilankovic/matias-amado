@@ -13,6 +13,15 @@ body {
   }
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#root main {
+  flex: 1;
+}
+
 a {
   color: currentColor;
 }
@@ -178,4 +187,9 @@ a {
 
 .active {
   color: #b28378;
+}
+
+input,
+textarea {
+  border: 1px solid #666666;
 }/*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@ import Categories from "./Categories";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center bg-white px-14">
+    <div className="flex justify-between items-center bg-white px-14 py-8 lg:py-0">
       <div>
         <Link to="/">
           <img src="/images/logo.svg" alt="logo" />
