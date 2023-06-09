@@ -172,6 +172,10 @@ a {
   }
 }
 
+#slider-post {
+  height: 70vh;
+}
+
 #icon-ma {
   left: 5%;
   width: 200px;
@@ -191,5 +195,5 @@ a {
 
 input,
 textarea {
-  border: 1px solid #666666;
+  border: 1px solid black;
 }/*# sourceMappingURL=main.css.map */

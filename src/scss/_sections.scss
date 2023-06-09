@@ -61,6 +61,9 @@
     height: auto;
   }
 }
+#slider-post {
+  height: 70vh;
+}
 #icon-ma {
   left: 5%;
   width: 200px;
@@ -80,5 +83,5 @@
 
 input,
 textarea {
-  border: 1px solid $color-secondary;
+  border: 1px solid black;
 }

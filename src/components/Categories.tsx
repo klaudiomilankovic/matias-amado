@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Category = {
   category: number;
 };
@@ -25,24 +27,24 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="[&>li]:mb-2">
@@ -50,24 +52,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="[&>li]:mb-2">
@@ -75,24 +72,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="[&>li]:mb-2">
@@ -100,35 +92,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
-              </li>
-
-              <li>
-                <a href="#" className="link-white">
-                  Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
-                  Lifting facial
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
           </>
@@ -139,24 +115,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="[&>li]:mb-2">
@@ -164,24 +135,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
           </>
@@ -192,24 +158,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="[&>li]:mb-2">
@@ -217,24 +178,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
             <ul className="[&>li]:mb-2">
@@ -242,24 +198,19 @@ const Categories = ({ category }: Category) => {
                 <span className="font-bold">Cabeza y cuello</span>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Lifting facial
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Blefaroplastia
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="link-white">
+                <Link to="/detalles/1" className="link-white">
                   Mentoplastia
-                </a>
-              </li>
-              <li>
-                <a href="#" className="link-white">
-                  Rinoplastia
-                </a>
+                </Link>
               </li>
             </ul>
           </>
