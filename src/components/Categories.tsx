@@ -18,7 +18,7 @@ const Categories = ({ category }: Category) => {
   };
 
   return (
-    <section className="fixed left-0 categories w-full px-8 hidden bg-black h-screen bg-opacity-20" id={`categories-${category}`} onClick={closeCategories}>
+    <section className="fixed left-0 categories w-full px-8 hidden bg-black h-screen bg-opacity-30" id={`categories-${category}`} onClick={closeCategories}>
       <div className="bg-primary px-12 pt-8 pb-12 text-white flex justify-evenly gap-20 container m-auto">
         {category === 1 ? (
           <>
