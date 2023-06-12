@@ -3,7 +3,6 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Loader from "./Loader";
 import useFetch from "../hooks/useFetch";
-import { Whatsapp } from "./MySvgs";
 
 type SliderItemProps = {
   src: string;
@@ -29,8 +28,9 @@ type SliderProps = {
   error: null;
 };
 
-const SliderPost = () => {
-  const { data, loading } = useFetch(`/imagenes`) as SliderProps;
+const SliderPost = ({ id }) => {
+  const { data, loading } = useFetch(`/imagenes/${id}`) as SliderProps;
+  const url = "http://matiasamado.com/backend/images/";
 
   const properties = {
     arrows: false,
@@ -42,11 +42,7 @@ const SliderPost = () => {
 
   return (
     <section className="overflow-hidden" id="slider-post">
-      {loading ? <Loader /> : <Slide {...properties}>{data && data.map((image) => <SliderItem key={image.id} src={image.image} />)}</Slide>}
-
-      <a href="https://wa.me/5493874685060" target="_blank" rel="noreferrer" className="fixed z-20 bottom-8 right-8 drop-shadow-hover drop-shadow svg-primary">
-        <Whatsapp />
-      </a>
+      {loading ? <Loader /> : <Slide {...properties}>{data && data.map((image) => <SliderItem key={image.id} src={url + image.image} />)}</Slide>}
     </section>
   );
 };

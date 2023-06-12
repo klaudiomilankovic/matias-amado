@@ -7,7 +7,7 @@ const About = () => {
         <img src="/images/icon-ma.svg" />
       </div>
       <div className="aspect-square md:aspect-auto md:w-1/2">
-        <Image src="https://thk-avalos.com/backend/images/avalos_cc370695f9.jpg" />
+        <Image src="/images/img-bio.jpg" />
       </div>
       <div className="md:w-1/2 p-12 color-primary h-full flex items-center">
         <div>

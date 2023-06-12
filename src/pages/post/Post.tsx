@@ -1,12 +1,16 @@
+import { useParams } from "react-router-dom";
+
 import Layout from "../../components/Layout";
 import SliderPost from "../../components/SliderPost";
 import Description from "../../components/Description";
 
 const Post = () => {
+  const { id } = useParams();
+
   return (
     <Layout>
-      <SliderPost />
-      <Description />
+      <SliderPost id={id} />
+      <Description id={id} />
     </Layout>
   );
 };

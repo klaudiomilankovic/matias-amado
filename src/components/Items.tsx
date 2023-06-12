@@ -1,22 +1,34 @@
 import { Link } from "react-router-dom";
-import Image from "../components/ImageComponent";
+import ImageComponent from "../components/ImageComponent";
 
-const Items = () => {
+type Props = {
+  id: number;
+  image: string;
+  category: string;
+  title: string;
+  text: string;
+};
+
+const Items = ({ id, image, category, title, text }: Props) => {
+  const url = "http://matiasamado.com/backend/images/";
+
   return (
     <article className="item border border-black relative">
       <div className="item-img">
-        <Link to="/detalles/2">
+        <Link to={`/detalles/${id}`}>
           <div className="aspect-video object-cover hover:opacity-80 transition-opacity">
-            <Image src="https://thk-avalos.com/backend/images/avalos_cc370695f9.jpg" alt="" />
+            <ImageComponent src={url + image} alt={title} />
           </div>
         </Link>
       </div>
-      <div className="item-txt p-4 h-44">
-        <h3 className="text-sm text-black mb-2">Quirúrgicos</h3>
-        <h2 className="text-xl font-bold ">Botox</h2>
-        <p className="text-gray-600 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+      <div className="item-txt p-4 pb-14">
+        <h3 className="text-sm text-black mb-2">{category}</h3>
+        <h2 className="text-xl font-bold ">{title}</h2>
+        <p className="text-gray-600 text-sm">{text}</p>
       </div>
-      <button className="bg-primary font-bold text-white absolute bottom-0 right-4 px-6 py-2 hover:bg-black transition-all">Consulta</button>
+      <Link to={`/detalles/${id}`} className="bg-primary font-bold text-white absolute bottom-0 right-4 px-6 py-2 hover:bg-black transition-all">
+        Consulta
+      </Link>
     </article>
   );
 };

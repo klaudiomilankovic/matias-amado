@@ -1,7 +1,10 @@
 import { NavLink, Link } from "react-router-dom";
 import { IconDown } from "./MySvgs";
+import useFetch from "../hooks/useFetch";
 
 const NavMobile = () => {
+  const { data } = useFetch(`/trabajos`);
+
   const handleMenu = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     const menus = document.querySelectorAll(".nav-mobile-submenu");
     menus.forEach((menu) => {
@@ -26,26 +29,16 @@ const NavMobile = () => {
           </button>
 
           <ul className="nav-mobile-submenu hidden mt-1" id="submenu-1">
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Lifting facial
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Blefaroplastia
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Mentoplastia
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Rinoplastia
-              </Link>
-            </li>
+            {data &&
+              data
+                .filter((item) => item.category === 1)
+                .map((item) => (
+                  <li key={item.id}>
+                    <Link to={`/detalles/${item.id}`} className="link-white">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
           </ul>
         </li>
         <li>
@@ -54,26 +47,16 @@ const NavMobile = () => {
           </button>
 
           <ul className="nav-mobile-submenu hidden mt-1" id="submenu-2">
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Lifting facial
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Blefaroplastia
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Mentoplastia
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Rinoplastia
-              </Link>
-            </li>
+            {data &&
+              data
+                .filter((item) => item.category === 2)
+                .map((item) => (
+                  <li key={item.id}>
+                    <Link to={`/detalles/${item.id}`} className="link-white">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
           </ul>
         </li>
         <li>
@@ -82,26 +65,16 @@ const NavMobile = () => {
           </button>
 
           <ul className="nav-mobile-submenu hidden mt-1" id="submenu-3">
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Lifting facial
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Blefaroplastia
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Mentoplastia
-              </Link>
-            </li>
-            <li>
-              <Link to="/detalles/1" className="link-white">
-                Rinoplastia
-              </Link>
-            </li>
+            {data &&
+              data
+                .filter((item) => item.category === 3)
+                .map((item) => (
+                  <li key={item.id}>
+                    <Link to={`/detalles/${item.id}`} className="link-white">
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
           </ul>
         </li>
         <li>

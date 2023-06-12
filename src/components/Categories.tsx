@@ -1,10 +1,19 @@
-import { Link } from "react-router-dom";
+import CategoriesItems from "./CategoriesItems";
+import Loader from "./Loader";
+import useFetch from "../hooks/useFetch";
 
 type Category = {
   category: number;
 };
 
+type Props = {
+  data: { id: number; section: number; title: string; filter: any }[];
+  loading: boolean;
+};
+
 const Categories = ({ category }: Category) => {
+  const { data, loading } = useFetch(`/categorias`) as Props;
+
   const closeCategories = () => {
     const categories = document.querySelectorAll(".categories");
     const btns = document.querySelectorAll(".btn-categories");
@@ -20,201 +29,7 @@ const Categories = ({ category }: Category) => {
   return (
     <section className="fixed left-0 categories w-full px-8 hidden bg-black h-screen bg-opacity-30" id={`categories-${category}`} onClick={closeCategories}>
       <div className="bg-primary px-12 pt-8 pb-12 text-white flex justify-evenly gap-20 container m-auto">
-        {category === 1 ? (
-          <>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Rinoplastia
-                </Link>
-              </li>
-            </ul>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-          </>
-        ) : category === 2 ? (
-          <>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-          </>
-        ) : (
-          <>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-            <ul className="[&>li]:mb-2">
-              <li>
-                <span className="font-bold">Cabeza y cuello</span>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Lifting facial
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Blefaroplastia
-                </Link>
-              </li>
-              <li>
-                <Link to="/detalles/1" className="link-white">
-                  Mentoplastia
-                </Link>
-              </li>
-            </ul>
-          </>
-        )}
+        {loading ? <Loader /> : data && data.filter((item) => item.section === category).map((item) => <CategoriesItems key={item.id} id={item.id} title={item.title} />)}
       </div>
     </section>
   );

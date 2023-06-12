@@ -12,26 +12,26 @@ type SliderItemProps = {
 
 const SliderItem = ({ src, alt }: SliderItemProps) => {
   const [isLoading, setIsLoading] = useState(true);
+  const url = "http://matiasamado.com/backend/images/";
 
   useEffect(() => {
     const image = new Image();
-    image.src = src;
+    image.src = url + src;
     image.onload = () => {
       setIsLoading(false);
     };
   }, [src]);
 
-  return isLoading ? <Loader /> : <img src={src} alt={alt} className="fade-in h-screen w-screen object-cover" />;
+  return isLoading ? <Loader /> : <img src={url + src} alt={alt} className="fade-in h-screen w-screen object-cover" />;
 };
 
 type SliderProps = {
   data: null | Array<{ id: number; image: string }>;
   loading: boolean;
-  error: null;
 };
 
 const Slider = () => {
-  const { data, loading } = useFetch(`/imagenes`) as SliderProps;
+  const { data, loading } = useFetch(`/home`) as SliderProps;
 
   const properties = {
     arrows: false,
