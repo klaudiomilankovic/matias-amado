@@ -57,6 +57,14 @@ a {
   background-color: #666666;
 }
 
+svg {
+  fill: currentColor;
+}
+
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
 .nav li a,
 .nav li button {
   height: 130px;
@@ -202,8 +210,4 @@ a {
 input,
 textarea {
   border: 1px solid black;
-}
-
-svg {
-  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

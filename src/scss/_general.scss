@@ -51,3 +51,11 @@ a {
 .bg-secondary {
   background-color: $color-secondary;
 }
+
+svg {
+  fill: currentColor;
+}
+
+.text-wrap-balance {
+  text-wrap: balance;
+}

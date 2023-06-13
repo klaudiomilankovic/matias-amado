@@ -20,8 +20,8 @@ const Description = ({ id }) => {
       <section className="px-14 py-20 md:flex gap-16 mb-8">
         <div className="md:w-3/4">
           <h1 className="text-4xl md:text-5xl font-bold mb-14 uppercase">{data[0].title}</h1>
-          <div className="border-t border-b border-black py-8 mb-8 md:px-4 ">
-            <p className="text-secondary">
+          <div className="border-t border-b border-black py-8 mb-8">
+            <p className="text-secondary text-wrap-balance">
               <Text text={data[0].text} />
             </p>
           </div>
