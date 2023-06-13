@@ -1,5 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
-import { IconDown } from "./MySvgs";
+import { IconDown } from "../icons/MySvgs";
 import useFetch from "../hooks/useFetch";
 
 const NavMobile = () => {

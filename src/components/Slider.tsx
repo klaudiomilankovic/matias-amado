@@ -3,7 +3,7 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import Loader from "./Loader";
 import useFetch from "../hooks/useFetch";
-import { Whatsapp } from "./MySvgs";
+import { Whatsapp } from "../icons/MySvgs";
 
 type SliderItemProps = {
   src: string;

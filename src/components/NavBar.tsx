@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { IconDown } from "./MySvgs";
+import { IconDown } from "../icons/MySvgs";
 
 const NavBar = () => {
   const HandleCategories = (category: number) => {

@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin } from "./MySvgs";
+import { Facebook, Instagram, Linkedin } from "../icons/MySvgs";
 
 const Social = () => {
   const OpenMenu = () => {
