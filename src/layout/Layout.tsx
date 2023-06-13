@@ -1,6 +1,6 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import NavMobile from "./NavMobile";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import NavMobile from "../components/NavMobile";
 
 type Props = {
   children: React.ReactNode;

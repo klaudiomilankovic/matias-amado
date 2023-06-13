@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import BeatLoader from "react-spinners/BeatLoader";
+import type { DataContact } from "../types/types";
 
 const Error = () => {
   return <div className="font-bold text-sm">Debes completar este campo</div>;
@@ -18,16 +19,7 @@ const Form = () => {
     formState: { errors },
   } = useForm();
 
-  type Data = {
-    name?: string;
-    city?: string;
-    email?: string;
-    address?: string;
-    phone?: string;
-    message?: string;
-  };
-
-  const onSubmit = (data: Data) => {
+  const onSubmit = (data: DataContact) => {
     setSending(true);
     const sender = {
       to: " ",

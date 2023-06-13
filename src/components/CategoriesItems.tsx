@@ -14,8 +14,6 @@ type PropsItems = {
 const CategoriesItems = ({ id, title }: Props) => {
   const { data } = useFetch(`/trabajos`) as PropsItems;
 
-  console.log(data);
-
   return (
     <ul className="[&>li]:mb-2">
       <li>
