@@ -1,13 +1,13 @@
 import Layout from "../../layout/Layout";
 import About from "../../components/About";
 import More from "../../components/More";
-import Slider from "../../components/Slider";
+import Video from "../../components/Video";
 import Works from "../../components/Works";
 
 const Home = () => {
   return (
     <Layout>
-      <Slider />
+      <Video />
       <More />
       <About />
       <Works title="Tratamientos destacados" />
