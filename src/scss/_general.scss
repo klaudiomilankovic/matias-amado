@@ -9,7 +9,6 @@ body {
     font-size: 14px;
   }
 }
-
 #root {
   display: flex;
   flex-direction: column;
@@ -18,9 +17,6 @@ body {
     flex: 1;
   }
 }
-
-//Links
-
 a {
   color: currentColor;
 }
@@ -30,15 +26,12 @@ a {
     color: $color-secondary;
   }
 }
-//Fonts
-
 .font-light {
   font-weight: 300;
 }
 .font-italic {
   font-style: italic;
 }
-
 .text-primary {
   color: $color-primary;
 }
@@ -48,14 +41,19 @@ a {
 .bg-primary {
   background-color: $color-primary;
 }
+.bg-primary-opacity {
+  background-color: rgba($color-primary, 0.8);
+}
+
 .bg-secondary {
   background-color: $color-secondary;
 }
-
 svg {
   fill: currentColor;
 }
-
 .text-wrap-balance {
   text-wrap: balance;
+}
+.border-primary {
+  border-color: $color-primary;
 }

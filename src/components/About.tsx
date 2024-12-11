@@ -1,6 +1,28 @@
 import Image from "../components/ImageComponent";
 
 const About = () => {
+  const data = [
+    {
+      title: "Carrera de Medicina",
+      text: "(6 años) Universidad Fundación H A Barcelo - La Rioja",
+    },
+    {
+      title: "Residencia de Cirugía General",
+      text: "(5años ) Hospital San Bernardo - Salta",
+    },
+    {
+      title: "Residencia de Cirugía Plástica ",
+      text: "(3 años) Hopsital Federico Abete - Buenos Aires",
+    },
+    {
+      title: "Carrera de Médico Especialista en Cirugía Plástica",
+      text: "(3 años ) Universidad de Buenos Aires (UBA)",
+    },
+    {
+      title: "Especialista en Medicina Estética",
+      text: "(1año) - AICER",
+    },
+  ];
   return (
     <section className="md:flex relative" id="section-about">
       <div className="absolute z-20" id="icon-ma">
@@ -9,29 +31,15 @@ const About = () => {
       <div className="aspect-square md:aspect-auto md:w-1/2">
         <Image src="/images/img-bio.jpg" />
       </div>
-      <div className="md:w-1/2 p-12 color-primary h-full flex items-center">
+      <div className="md:w-1/2 p-10 lg:p-12 color-primary h-full flex items-center">
         <div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-8">MATIAS AMADO</h1>
-          <ul className="[&>li]:mb-4 list-disc ml-3">
-            <li>
-              Carrera de Medicina <br />
-              <span className="font-italic">(6 años) Universidad Fundación H A Barcelo - La Rioja</span>
-            </li>
-            <li>
-              Residencia de Cirugía General <br />
-              <span className="font-italic">(5años ) Hospital San Bernardo - Salta</span>
-            </li>
-            <li>
-              Residencia de Cirugía Plástica <br />
-              <span className="font-italic">(3 años) Hopsital Federico Abete - Buenos Aires</span>
-            </li>
-            <li>
-              Carrera de Médico Especialista en Cirugía Plástica <br /> <span className="font-italic">(3 años ) Universidad de Buenos Aires (UBA)</span>
-            </li>
-            <li>
-              Especialista en Medicina Estética <br />
-              <span className="font-italic">(1año) - AICER</span>
-            </li>
+          <ul className="list-disc flex flex-col gap-y-6">
+            {data.map((item, index) => (
+              <li key={index}>
+                <h2 className="text-xl lg:text-2x">{item.title}</h2>
+                <span className="font-italic opacity-50">{item.text}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

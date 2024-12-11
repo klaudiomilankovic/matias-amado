@@ -12,17 +12,32 @@ const Social = () => {
     <div className="flex gap-6">
       <ul className="flex gap-4">
         <li>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="svg-primary">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black"
+          >
             <Facebook />
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="svg-primary">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black"
+          >
             <Instagram />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="svg-primary">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black"
+          >
             <Linkedin />
           </a>
         </li>

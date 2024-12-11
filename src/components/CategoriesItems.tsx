@@ -15,7 +15,7 @@ const CategoriesItems = ({ id, title }: Props) => {
   const { data } = useFetch(`/trabajos`) as PropsItems;
 
   return (
-    <ul className="[&>li]:mb-2">
+    <ul className="[&>li]:mb-1 mb-4">
       <li>
         <span className="font-bold">{title}</span>
       </li>
@@ -24,7 +24,7 @@ const CategoriesItems = ({ id, title }: Props) => {
           .filter((item) => item.category === id)
           .map((item) => (
             <li key={item.id}>
-              <Link to={`/detalles/${item.id}`} className="link-white">
+              <Link to={`/detalles/${item.id}`} className="hover:underline">
                 {item.title}
               </Link>
             </li>

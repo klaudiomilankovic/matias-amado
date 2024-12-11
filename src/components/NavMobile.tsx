@@ -16,25 +16,29 @@ const NavMobile = () => {
   };
 
   return (
-    <div className="nav-mobile bg-primary px-14 py-14 h-screen w-full pt-14 hidden">
-      <ul className="[&>li]:mb-4 [&>li>a]:text-white [&>li>button]:text-white">
+    <div className="nav-mobile fade-in bg-primary-opacity backdrop-blur px-6 py-14 h-screen w-full hidden">
+      <ul className="flex flex-col gap-y-3 [&>li>a]:text-white [&>li>button]:text-white">
         <li>
           <NavLink to="/" className="font-bold">
             Home
           </NavLink>
         </li>
         <li>
-          <button className="font-bold flex items-center gap-2" data-menu="1" onClick={handleMenu}>
-            Quirúrgico <IconDown />
+          <button
+            className="font-bold flex items-center gap-2"
+            data-menu="1"
+            onClick={handleMenu}
+          >
+            Cirugías <IconDown />
           </button>
 
-          <ul className="nav-mobile-submenu hidden mt-1" id="submenu-1">
+          <ul className="hidden mt-1" id="submenu-1">
             {data &&
               data
                 .filter((item) => item.category === 1)
                 .map((item) => (
-                  <li key={item.id}>
-                    <Link to={`/detalles/${item.id}`} className="link-white">
+                  <li key={item.id} className="mt-2">
+                    <Link to={`/detalles/${item.id}`} className="text-white ">
                       {item.title}
                     </Link>
                   </li>
@@ -42,8 +46,12 @@ const NavMobile = () => {
           </ul>
         </li>
         <li>
-          <button className="font-bold flex items-center gap-2 " data-menu="2" onClick={handleMenu}>
-            No quirúrgico <IconDown />
+          <button
+            className="font-bold flex items-center gap-2 "
+            data-menu="2"
+            onClick={handleMenu}
+          >
+            Inyectables <IconDown />
           </button>
 
           <ul className="nav-mobile-submenu hidden mt-1" id="submenu-2">
@@ -51,7 +59,7 @@ const NavMobile = () => {
               data
                 .filter((item) => item.category === 2)
                 .map((item) => (
-                  <li key={item.id}>
+                  <li key={item.id} className="mt-2">
                     <Link to={`/detalles/${item.id}`} className="link-white">
                       {item.title}
                     </Link>
@@ -60,8 +68,12 @@ const NavMobile = () => {
           </ul>
         </li>
         <li>
-          <button className="font-bold flex items-center gap-2 " data-menu="3" onClick={handleMenu}>
-            Cosmetica <IconDown />
+          <button
+            className="font-bold flex items-center gap-2 "
+            data-menu="3"
+            onClick={handleMenu}
+          >
+            Aparatología y Cosmiatría <IconDown />
           </button>
 
           <ul className="nav-mobile-submenu hidden mt-1" id="submenu-3">
@@ -69,7 +81,7 @@ const NavMobile = () => {
               data
                 .filter((item) => item.category === 3)
                 .map((item) => (
-                  <li key={item.id}>
+                  <li key={item.id} className="mt-2">
                     <Link to={`/detalles/${item.id}`} className="link-white">
                       {item.title}
                     </Link>

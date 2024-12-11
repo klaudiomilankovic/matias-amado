@@ -10,7 +10,7 @@ const Home = () => {
       <Slider />
       <More />
       <About />
-      <Works />
+      <Works title="Tratamientos destacados" />
     </Layout>
   );
 };

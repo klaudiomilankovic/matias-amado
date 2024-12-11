@@ -21,12 +21,15 @@ const Items = ({ id, image, category, title, text }: Props) => {
           </div>
         </Link>
       </div>
-      <div className="item-txt p-4 pb-14">
-        <h3 className="text-sm text-black mb-2">{category}</h3>
-        <h2 className="text-xl font-bold ">{title}</h2>
+      <div className="item-txt p-4 pb-20">
+        <h3 className="text-sm text-black">{category}</h3>
+        <h2 className="text-xl font-bold mb-3">{title}</h2>
         <p className="text-gray-600 text-sm">{text}</p>
       </div>
-      <Link to={`/detalles/${id}`} className="bg-primary font-bold text-white absolute bottom-0 right-4 px-6 py-2 hover:bg-black transition-all">
+      <Link
+        to={`/detalles/${id}`}
+        className="bg-primary font-bold text-white absolute bottom-0 right-4 px-6 py-3 hover:bg-black transition-colors"
+      >
         Consulta
       </Link>
     </article>

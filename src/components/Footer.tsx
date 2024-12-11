@@ -1,23 +1,51 @@
 import { Facebook, Instagram, Linkedin } from "../icons/MySvgs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section className="p-14 bg-primary">
-      <img src="/images/logo-footer.svg" alt="Logo Footer" className="mb-12" />
+    <section className="px-6 lg:px-14 py-14 bg-primary flex flex-col gap-y-6 items-start">
+      <img src="/images/logo-footer.svg" alt="Logo Footer" />
 
-      <ul className="flex gap-4 ">
+      <ul className="flex flex-col gap-y-1 text-white">
         <li>
-          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="svg-white">
+          <Link to="/">Home</Link>
+        </li>
+        <li>Quirúrgico</li>
+        <li>No quirurgico</li>
+        <li>Cosmética</li>
+        <li>
+          <Link to="/contacto">Contacto</Link>
+        </li>
+      </ul>
+
+      <ul className="flex gap-x-4">
+        <li>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="svg-white"
+          >
             <Facebook />
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="svg-white">
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="svg-white"
+          >
             <Instagram />
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="svg-white">
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="svg-white"
+          >
             <Linkedin />
           </a>
         </li>
