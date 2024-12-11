@@ -14,24 +14,20 @@ const Rinoplastia = () => {
 
   const referencias = [
     {
-      title: "",
-      image: "/images/fullface1.png",
+      title: "Foto de perfil izquierdo.",
+      image: "/images/rinoplastia-refe-1.jpg",
     },
     {
-      title: "",
-      image: "/images/fullface2.png",
+      title: "Foto de frente.",
+      image: "/images/rinoplastia-refe-2.jpg",
     },
     {
-      title: "",
-      image: "/images/fullface3.png",
+      title: "Foto de perfil derecho.",
+      image: "/images/rinoplastia-refe-3.jpg",
     },
     {
-      title: "",
-      image: "/images/fullface4.png",
-    },
-    {
-      title: "",
-      image: "/images/fullface5.png",
+      title: "Foto rostro inclinado hacia arriba.",
+      image: "/images/rinoplastia-refe-4.jpg",
     },
   ];
 
@@ -54,7 +50,7 @@ const Rinoplastia = () => {
             </div>
             <div className="flex flex-col gap-y-3">
               <span className="text-white bg-primary py-4 px-12 font-bold text-3xl text-center">
-                $10.0000
+                $30.0000
               </span>
               <span className="text-sm font-bold">
                 El valor de la pre-consulta online incluye diagnóstico y

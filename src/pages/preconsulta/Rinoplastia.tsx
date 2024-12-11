@@ -4,8 +4,8 @@ import Layout from "../../layout/Layout";
 import FormMini from "../../components/FormMini";
 import DragFiles from "./DragFiles";
 import ItemReferencias from "./ItemReferencias";
-import { Forward } from "../../icons/MySvgs";
 import Image from "../../components/ImageComponent";
+import Pago from "./Pago";
 
 const Rinoplastia = () => {
   useEffect(() => {
@@ -47,7 +47,7 @@ const Rinoplastia = () => {
             </div>
             <div className="flex flex-col gap-y-3">
               <span className="text-white bg-primary py-4 px-12 font-bold text-3xl text-center">
-                $10.0000
+                $30.0000
               </span>
               <span className="text-sm font-bold">
                 El valor de la pre-consulta online incluye diagnóstico y
@@ -133,14 +133,7 @@ const Rinoplastia = () => {
                 <ItemReferencias data={item} key={index} />
               ))}
             </div>
-            <div className="w-full">
-              <button className="bg-primary text-white font-bold px-6 py-3 mt-4 transition-colors hover:bg-black flex justify-between items-center w-full lg:w-1/3">
-                <span>Proceder al pago</span>
-                <span>
-                  <Forward />
-                </span>
-              </button>
-            </div>
+            <Pago />
           </section>
         </div>
         <div className="lg:w-1/4">

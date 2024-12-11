@@ -80,7 +80,7 @@ const Rinoplastia = () => {
             </div>
             <div className="flex flex-col gap-y-3">
               <span className="text-white bg-primary py-4 px-12 font-bold text-3xl text-center">
-                $10.0000
+                $30.0000
               </span>
               <span className="text-sm font-bold">
                 El valor de la pre-consulta online incluye diagnóstico y
