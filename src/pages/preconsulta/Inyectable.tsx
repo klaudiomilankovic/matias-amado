@@ -15,19 +15,19 @@ const Rinoplastia = () => {
   const referencias = [
     {
       title: "Foto de perfil izquierdo.",
-      image: "/images/rinoplastia-refe-1.jpg",
+      image: "/images/Recurso3.png",
     },
     {
       title: "Foto de frente.",
-      image: "/images/rinoplastia-refe-2.jpg",
+      image: "/images/Recurso4.png",
     },
     {
       title: "Foto de perfil derecho.",
-      image: "/images/rinoplastia-refe-3.jpg",
+      image: "/images/Recurso5.png",
     },
     {
       title: "Foto rostro inclinado hacia arriba.",
-      image: "/images/rinoplastia-refe-4.jpg",
+      image: "/images/Recurso6.png",
     },
   ];
 
@@ -36,7 +36,7 @@ const Rinoplastia = () => {
       {/* ma.cirugia.plastica@outlook.com.ar */}
       <section className="px-6 lg:px-14 mt-20 aspect-square lg:aspect-[16/6]">
         <Image
-          src="/images/rinoplastia.jpg"
+          src="/images/niuno_11-6588498.webp"
           alt="Fotografía de una rinoplastia"
         />
       </section>

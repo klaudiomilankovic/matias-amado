@@ -21,7 +21,7 @@ const Video = () => {
         <WhatsApp />
       </a>
 
-      <div className="fixed z-20 bottom-10 left-8">
+      <div className="fixed z-20 bottom-24 left-6 lg:left-8">
         <Link
           to="/pre-consulta"
           className="bg-primary px-8 py-3 font-bold hover:bg-black transition-colors text-white"

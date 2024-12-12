@@ -13,7 +13,20 @@ const Layout = ({ children }: Props) => {
         <Header />
         <NavMobile />
       </header>
-      <main>{children}</main>
+      <main>
+        {children}
+
+        <div className="fixed z-20 bottom-10 left-6 lg:left-8">
+          <a
+            href="https://my.crisalix.com/signup/matiasamadocirujanoplastico"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-primary px-8 py-3 font-bold hover:bg-black transition-colors text-white"
+          >
+            Accede a tu simulacion 3D
+          </a>
+        </div>
+      </main>
       <footer>
         <Footer />
       </footer>
