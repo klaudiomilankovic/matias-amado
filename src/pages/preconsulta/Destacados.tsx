@@ -27,7 +27,7 @@ const Destacados = () => {
       title: "Face Inyectable",
       category: "Quirúrgicos",
       text: "A través de la siguiente encuesta y fotografías recibirás por correo electrónico un Informe Médico y Presupuesto por parte del Dr. Matías Amado. Así mismo recibirás toda la información acerca de estudios complementarios, fechas disponibles y asistencia personalizada para agendar tu cirugía.",
-      image: "/images/niuno_11-6588498.webp",
+      image: "/images/inyectable.webp",
       url: "/pre-consulta/fullface",
     },
   ];

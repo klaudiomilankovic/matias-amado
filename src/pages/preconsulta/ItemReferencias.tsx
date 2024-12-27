@@ -11,6 +11,13 @@ const ItemReferencias = ({ data }) => {
           alt={data.title}
         />
       </div>
+      <input
+        type="file"
+        name="image1"
+        onChange={handleImageChange1}
+        accept="image/*"
+        required
+      />
     </article>
   );
 };
