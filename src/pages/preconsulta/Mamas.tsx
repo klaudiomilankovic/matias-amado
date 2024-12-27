@@ -22,7 +22,7 @@ const Mamas = () => {
   const [selectedImage3, setSelectedImage3] = useState(null);
   const [selectedImage4, setSelectedImage4] = useState(null);
   const api =
-    "http://aestethicmedicinecenter.com/backend/send-preconsulta-mamas.php";
+    "https://aestethicmedicinecenter.com/backend/send-preconsulta-mamas.php";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -114,7 +114,7 @@ const Mamas = () => {
             <Pago />
           ) : (
             <form onSubmit={handleSubmit(onSubmit)}>
-              <section className="border-t-2 border-b-2 border-primary py-12 flex flex-col items-start gap-y-6">
+              <section className="border-t-2 border-b-2 border-primary py-12 flex flex-col gap-y-6">
                 <div className="flex flex-col gap-y-3">
                   <h3 className="font-bold text-2xl">Descripción</h3>
                   <p className="text-secondary text-wrap-balance">
@@ -246,7 +246,7 @@ const Mamas = () => {
 
                 <div>
                   <span className="font-bold text-xl block">
-                    Carga las fotos de tu rostro.
+                    Carga las fotos de tu cuerpo.
                   </span>
                   <span className="font-italic">
                     Sigue las instrucciones para cada imagen según las siguiente
@@ -254,8 +254,8 @@ const Mamas = () => {
                   </span>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                <div className="grid grid-cols-2 gap-4 max-w-3xl">
+                  <article className="flex flex-col gap-y-2 items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>
                         Foto de frente. Desde altura de cintrura hacia arriba.
@@ -278,7 +278,7 @@ const Mamas = () => {
                       {errors.image1 && <Error />}
                     </div>
                   </article>
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                  <article className="flex flex-col gap-y-2 items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>Foto de perfil derecho.</h2>
                     </div>
@@ -299,7 +299,7 @@ const Mamas = () => {
                       {errors.image2 && <Error />}
                     </div>
                   </article>
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                  <article className="flex flex-col gap-y-2 items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>
                         Foto de frente. Brazos levantados hacia arriba altura de
@@ -323,7 +323,7 @@ const Mamas = () => {
                       {errors.image3 && <Error />}
                     </div>
                   </article>
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                  <article className="flex flex-col gap-y-2 items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>Foto de perfil izquierdo.</h2>
                     </div>

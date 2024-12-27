@@ -13,6 +13,7 @@ const Form = () => {
   const [sended, setSended] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState(false);
+  const api = "https://aestethicmedicinecenter.com/backend/send-email.php";
 
   const {
     register,
@@ -23,29 +24,26 @@ const Form = () => {
   const onSubmit = (data: DataContact) => {
     setSending(true);
     const sender = {
-      to: " ",
+      to: "ma.cirugia.plastica@outlook.com.ar",
       from: "no-reply@thk-avalos.com",
       from_name: "Matias Amado",
       subject: "Contacto",
     };
 
     axios
-      .post("https://thk-avalos.com/backend/send-email.php", {
+      .post(api, {
         ...data,
         ...sender,
       })
-      .then((data) => {
-        if (data.data === "success") {
-          setSended(true);
-          setSending(false);
-        } else {
-          setError(true);
-          setSending(false);
-        }
+      .then((response) => {
+        console.log("Success:", response.data);
+        setSended(true);
+        setSending(false);
       })
-      .catch(() => {
+      .catch((error) => {
+        console.error("Error:", error);
         setError(true);
-        setSended(false);
+        setSending(false);
       });
   };
 
@@ -128,7 +126,9 @@ const Form = () => {
           </div>
           <div>
             {sending ? (
-              <BeatLoader />
+              <div className="mt-4">
+                <BeatLoader />
+              </div>
             ) : (
               <button className="bg-primary text-white font-bold px-6 py-3 mt-4 transition-colors hover:bg-black flex justify-between items-center w-1/2">
                 <span>{text["es"].send}</span>

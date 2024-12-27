@@ -25,7 +25,7 @@ const Contorno = () => {
   const [selectedImage3, setSelectedImage3] = useState(null);
   const [selectedImage4, setSelectedImage4] = useState(null);
   const api =
-    "http://aestethicmedicinecenter.com/backend/send-preconsulta-contorno.php";
+    "https://aestethicmedicinecenter.com/backend/send-preconsulta-contorno.php";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -372,15 +372,15 @@ const Contorno = () => {
 
                 <div>
                   <span className="font-bold text-xl block">
-                    Carga las fotos de tu rostro.
+                    Carga las fotos de tu cuerpo.
                   </span>
                   <span className="font-italic">
                     Sigue las instrucciones para cada imagen según las siguiente
                     ilustraciones.
                   </span>
                 </div>
-                <div className="grid grid-cols-2 gap-4 max-w-4xl">
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                <div className="grid grid-cols-2 gap-4 max-w-3xl">
+                  <article className="flex flex-col gap-y-2  items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>
                         De frente. Cuerpo completo, brazos extendidos hacia
@@ -404,7 +404,7 @@ const Contorno = () => {
                       {errors.image1 && <Error />}
                     </div>
                   </article>
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                  <article className="flex flex-col gap-y-2  items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>
                         Perfil izquierdo. Brazos extendidos hacia al frente.
@@ -427,7 +427,7 @@ const Contorno = () => {
                       {errors.image2 && <Error />}
                     </div>
                   </article>
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                  <article className="flex flex-col gap-y-2  items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>
                         De frente. Cuerpo completo, brazos extendidos hacia
@@ -451,7 +451,7 @@ const Contorno = () => {
                       {errors.image3 && <Error />}
                     </div>
                   </article>
-                  <article className="flex flex-col gap-y-2 text-center items-start">
+                  <article className="flex flex-col gap-y-2  items-start">
                     <div className="font-bold text text-sm h-14 flex items-center">
                       <h2>
                         Perfil derecho. Brazos extendidos hacia al frente.
