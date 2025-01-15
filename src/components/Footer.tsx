@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin } from "../icons/MySvgs";
+import { Instagram } from "../icons/MySvgs";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -21,32 +21,12 @@ const Footer = () => {
       <ul className="flex gap-x-4">
         <li>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.instagram.com/aesthetic_medicine_center/"
             target="_blank"
             rel="noreferrer"
-            className="svg-white"
-          >
-            <Facebook />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="svg-white"
+            className="svg-white text-sm"
           >
             <Instagram />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="svg-white"
-          >
-            <Linkedin />
           </a>
         </li>
       </ul>

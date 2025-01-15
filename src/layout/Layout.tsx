@@ -16,12 +16,12 @@ const Layout = ({ children }: Props) => {
       <main>
         {children}
 
-        <div className="fixed z-20 bottom-10 left-6 lg:left-8">
+        <div className="fixed z-20 bottom-44 right-6 lg:right-8">
           <a
             href="https://my.crisalix.com/signup/matiasamadocirujanoplastico"
             target="_blank"
             rel="noreferrer"
-            className="bg-primary px-8 py-3 font-bold hover:bg-black transition-colors text-white"
+            className="bg-primary px-8 py-3 font-bold hover:bg-black transition-colors text-white shadow-lg"
           >
             Accede a tu simulacion 3D
           </a>

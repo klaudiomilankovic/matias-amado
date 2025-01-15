@@ -13,7 +13,7 @@ const Video = () => {
         className="w-full h-full object-cover overflow-hidden"
       ></video>
       <a
-        href="https://wa.me/5493874685060"
+        href="https://wa.me/5493872212864"
         target="_blank"
         rel="noreferrer"
         className="fixed z-20 bottom-8 right-8 bg-primary rounded-full p-3 text-white hover:bg-black transition-colors"
@@ -21,10 +21,10 @@ const Video = () => {
         <WhatsApp />
       </a>
 
-      <div className="fixed z-20 bottom-24 left-6 lg:left-8">
+      <div className="fixed z-20 bottom-32 right-6 lg:right-8">
         <Link
           to="/pre-consulta"
-          className="bg-primary px-8 py-3 font-bold hover:bg-black transition-colors text-white"
+          className="bg-primary px-8 py-3 font-bold hover:bg-black transition-colors text-white shadow-lg"
         >
           Pre-Consulta Online
         </Link>

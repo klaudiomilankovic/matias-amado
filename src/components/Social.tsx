@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Linkedin } from "../icons/MySvgs";
+import { Instagram } from "../icons/MySvgs";
 
 const Social = () => {
   const OpenMenu = () => {
@@ -13,32 +13,12 @@ const Social = () => {
       <ul className="flex gap-4">
         <li>
           <a
-            href="https://www.facebook.com/"
+            href="https://www.instagram.com/aesthetic_medicine_center/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-black"
-          >
-            <Facebook />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-black"
+            className="hover:text-black text-xl"
           >
             <Instagram />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-black"
-          >
-            <Linkedin />
           </a>
         </li>
       </ul>
