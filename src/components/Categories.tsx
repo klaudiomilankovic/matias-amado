@@ -28,7 +28,7 @@ const Categories = ({ category }: Category) => {
 
   return (
     <section
-      className="fixed left-0 categories w-full px-8 hidden bg-black/40 backdrop-blur min-h-screen "
+      className="fixed left-0 categories w-full px-8 bg-black/40 backdrop-blur min-h-screen "
       id={`categories-${category}`}
       onClick={closeCategories}
     >

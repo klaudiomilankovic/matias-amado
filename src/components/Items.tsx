@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Items = ({ id, image, category, title, text }: Props) => {
-  const url = "http://matiasamado.com/backend/images/";
+  const url = import.meta.env.VITE_API_URL;
 
   return (
     <article className="item border border-black relative">

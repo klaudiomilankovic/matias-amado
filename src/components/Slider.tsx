@@ -13,7 +13,7 @@ type SliderItemProps = {
 
 const SliderItem = ({ src, alt }: SliderItemProps) => {
   const [isLoading, setIsLoading] = useState(true);
-  const url = "http://matiasamado.com/backend/images/";
+  const url = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
     const image = new Image();

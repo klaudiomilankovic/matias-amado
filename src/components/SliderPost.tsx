@@ -19,7 +19,11 @@ const SliderItem = ({ src }: SliderItemProps) => {
     };
   }, [src]);
 
-  return isLoading ? <Loader /> : <img src={src} className="fade-in h-screen w-full object-cover" />;
+  return isLoading ? (
+    <Loader />
+  ) : (
+    <img src={src} className="fade-in h-screen w-full object-cover" />
+  );
 };
 
 type SliderProps = {
@@ -30,7 +34,7 @@ type SliderProps = {
 
 const SliderPost = ({ id }) => {
   const { data, loading } = useFetch(`/imagenes/${id}`) as SliderProps;
-  const url = "http://matiasamado.com/backend/images/";
+  const url = import.meta.env.VITE_API_URL;
 
   const properties = {
     arrows: false,
@@ -42,7 +46,16 @@ const SliderPost = ({ id }) => {
 
   return (
     <section className="overflow-hidden" id="slider-post">
-      {loading ? <Loader /> : <Slide {...properties}>{data && data.map((image) => <SliderItem key={image.id} src={url + image.image} />)}</Slide>}
+      {loading ? (
+        <Loader />
+      ) : (
+        <Slide {...properties}>
+          {data &&
+            data.map((image) => (
+              <SliderItem key={image.id} src={url + image.image} />
+            ))}
+        </Slide>
+      )}
     </section>
   );
 };
