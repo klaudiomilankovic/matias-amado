@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Video = () => {
   return (
-    <div className="h-[70vh] lg:h-screen w-full overflow-hidden">
+    <div className="h-screen w-full overflow-hidden">
       <video
         src="/videos/video.mp4"
         muted

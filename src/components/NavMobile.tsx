@@ -4,6 +4,7 @@ import useFetch from "../hooks/useFetch";
 
 const NavMobile = () => {
   const { data } = useFetch(`/trabajos`);
+  const { data: categories } = useFetch(`/categorias`);
 
   const handleMenu = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     const menus = document.querySelectorAll(".nav-mobile-submenu");
@@ -16,7 +17,7 @@ const NavMobile = () => {
   };
 
   return (
-    <div className="nav-mobile fade-in bg-primary-opacity backdrop-blur px-6 py-14 h-screen w-full hidden">
+    <div className="nav-mobile fade-in bg-primary-opacity backdrop-blur px-6 py-6 pb-12 h-screen w-full hidden overflow-y-auto">
       <ul className="flex flex-col gap-y-3 [&>li>a]:text-white [&>li>button]:text-white">
         <li>
           <NavLink to="/" className="font-bold">
@@ -31,16 +32,30 @@ const NavMobile = () => {
           >
             Cirugías <IconDown />
           </button>
-
           <ul className="hidden mt-1" id="submenu-1">
-            {data &&
-              data
-                .filter((item) => item.category === 1)
-                .map((item) => (
-                  <li key={item.id} className="mt-2">
-                    <Link to={`/detalles/${item.id}`} className="text-white ">
-                      {item.title}
-                    </Link>
+            {categories &&
+              categories
+                .filter((category) => category.section === 1)
+                .map((category) => (
+                  <li key={category.id}>
+                    <span className="font-bold text-white">
+                      {category.title}
+                    </span>
+                    <ul className="pl-4">
+                      {data &&
+                        data
+                          .filter((item) => item.category === category.section)
+                          .map((item) => (
+                            <li key={item.id}>
+                              <Link
+                                to={`/detalles/${item.id}`}
+                                className="text-white "
+                              >
+                                {item.title}
+                              </Link>
+                            </li>
+                          ))}
+                    </ul>
                   </li>
                 ))}
           </ul>
@@ -53,16 +68,30 @@ const NavMobile = () => {
           >
             Inyectables <IconDown />
           </button>
-
-          <ul className="nav-mobile-submenu hidden mt-1" id="submenu-2">
-            {data &&
-              data
-                .filter((item) => item.category === 2)
-                .map((item) => (
-                  <li key={item.id} className="mt-2">
-                    <Link to={`/detalles/${item.id}`} className="link-white">
-                      {item.title}
-                    </Link>
+          <ul className="hidden mt-1" id="submenu-2">
+            {categories &&
+              categories
+                .filter((category) => category.section === 2)
+                .map((category) => (
+                  <li key={category.id}>
+                    <span className="font-bold text-white">
+                      {category.title}
+                    </span>
+                    <ul className="pl-4">
+                      {data &&
+                        data
+                          .filter((item) => item.category === category.section)
+                          .map((item) => (
+                            <li key={item.id}>
+                              <Link
+                                to={`/detalles/${item.id}`}
+                                className="text-white "
+                              >
+                                {item.title}
+                              </Link>
+                            </li>
+                          ))}
+                    </ul>
                   </li>
                 ))}
           </ul>
@@ -75,16 +104,30 @@ const NavMobile = () => {
           >
             Aparatología y Cosmiatría <IconDown />
           </button>
-
-          <ul className="nav-mobile-submenu hidden mt-1" id="submenu-3">
-            {data &&
-              data
-                .filter((item) => item.category === 3)
-                .map((item) => (
-                  <li key={item.id} className="mt-2">
-                    <Link to={`/detalles/${item.id}`} className="link-white">
-                      {item.title}
-                    </Link>
+          <ul className="hidden mt-1" id="submenu-3">
+            {categories &&
+              categories
+                .filter((category) => category.section === 3)
+                .map((category) => (
+                  <li key={category.id}>
+                    <span className="font-bold text-white">
+                      {category.title}
+                    </span>
+                    <ul className="pl-4">
+                      {data &&
+                        data
+                          .filter((item) => item.category === category.section)
+                          .map((item) => (
+                            <li key={item.id}>
+                              <Link
+                                to={`/detalles/${item.id}`}
+                                className="text-white "
+                              >
+                                {item.title}
+                              </Link>
+                            </li>
+                          ))}
+                    </ul>
                   </li>
                 ))}
           </ul>
