@@ -3,6 +3,7 @@ import About from "../../components/About";
 import More from "../../components/More";
 import Video from "../../components/Video";
 import Works from "../../components/Works";
+import CrisalixReviews from "../../components/CrisalixReviews";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Video />
       <More />
       <About />
+      <CrisalixReviews />
       <Works title="Tratamientos destacados" />
     </Layout>
   );

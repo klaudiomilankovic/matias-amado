@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import NavMobile from "../components/NavMobile";
+import CrisalixHeader from "../components/CrisalixHeader";
 
 type Props = {
   children: React.ReactNode;
@@ -10,6 +11,7 @@ const Layout = ({ children }: Props) => {
   return (
     <>
       <header className="fixed z-40 w-full">
+        <CrisalixHeader />
         <Header />
         <NavMobile />
       </header>

@@ -1,0 +1,60 @@
+.crisalix-header .crisalix-widget-micro {
+	justify-content: flex-end !important;
+	display: flex !important;
+	/* Desktop: 70% */
+	transform-origin: top right;
+	color: black !important;
+}
+
+.crisalix-header {
+	position: sticky !important;
+	top: 0;
+	z-index: 2;
+	transition: 0.3s ease-in-out;
+	padding: 8px 20px 0 0;
+	/* oben/unten = 0 */
+	color: black !important;
+	background: #fff;
+}
+
+.crisalix-header * {
+	color: black !important;
+}
+
+@media (max-width: 768px) {
+	.crisalix-header .crisalix-widget-micro {
+		transform: scale(0.9) !important;
+		/* Mobil: 90% */
+		transform-origin: top right;
+	}
+
+	.crisalix-widget-micro {
+		flex-direction: row !important;
+	}
+
+	.crisalix-widget-micro .crisalix-widget-logo {
+		order: initial !important;
+	}
+
+	.crisalix-widget-micro__content {
+		flex-direction: row !important;
+		align-items: center !important;
+		gap: 3.2px;
+	}
+
+	.crisalix-widget-rate-text, .carousel-reviews-count {
+		font-size: 10.8px !important;
+		/* 90% von 12px */
+		color: black !important;
+	}
+
+	.crisalix-header .crisalix-widget-stars__rating__svg {
+		width: 15.3px !important;
+		height: 15.3px !important;
+	}
+
+	.crisalix-widget-micro .crisalix-widget-logo {
+		margin-top: 0 !important;
+		margin-right: 18px !important;
+	}
+}
